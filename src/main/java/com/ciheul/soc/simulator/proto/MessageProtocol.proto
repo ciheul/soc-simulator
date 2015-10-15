@@ -1,0 +1,65 @@
+option optimize_for = SPEED;
+option java_package = "com.ciheul.soc.simulator.proto";
+
+message SocMessage{
+	optional FlightPlanProto flightPlanProto = 1;
+	optional FlightPlanProtoList flightPlanProtoList = 2;
+	optional Ack ack = 3;
+}
+
+message FlightPlanProto{
+	optional int64 id = 1;
+	optional string aircraftId = 2;
+	optional string flightRules = 3;
+	optional string flightRulesNote = 4;
+	optional string flightType = 5;
+	optional string flightTypeNote = 6;
+	optional string aircraftType = 7;
+	optional int32 aircraftNumber = 8;
+	optional string aircraftColor = 9;
+	optional string turbulenceCategory = 10;
+	optional string turbulenceCategoryNote = 11;
+	optional string equipment = 12;
+	optional string cruisingSpeed = 13;
+	optional string cruisingSpeedUnit = 14;
+	optional string cruisingAltitude = 15;
+	optional string cruisingAltitudeUnit = 16;
+	optional string route = 17;
+	optional int64 flightDate = 18;
+	optional string departureAerodrome = 19;
+	optional int64 departureTime = 20;
+	optional string destinationAerodrome = 21;
+	optional string estEnrouteTime = 22;
+	optional string alternativeDestAerodrome = 23;
+	optional string endurance = 24;
+	optional int32 personOnBoard = 25;
+	optional int32 fuelOnBoard = 26;
+	optional string remark = 27;
+	optional string original = 28;
+	optional int64 receivedDate = 29;
+	optional bool isValid = 30;
+	optional double cruisingSpeedValue = 31;
+	optional double cruisingAltitudeValue = 32;
+	optional string errorNote = 33;
+	optional string pilotOnCommand = 34;
+	optional string header = 35;
+	optional string sequence = 36;
+	optional string correctionMessage = 37;
+	optional string messageType = 38;
+	optional string arrivalTime = 39;
+	optional string actualDepTime = 40;
+	optional string estimation = 41;
+	optional bool distributed = 42;
+	optional bool isActive = 43;
+	
+	
+}
+
+message FlightPlanProtoList{
+	repeated FlightPlanProto flightPlanProto = 1;
+}
+
+message Ack{
+	optional string status = 1 [default="OK"];
+}
+
