@@ -11,6 +11,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 @PropertySource(ignoreResourceNotFound = true, value = {
 		"classpath:simulator.properties", "file:${appConfiguration}" })
 public class SimulatorConfig {
+
 	@Bean
 	public static PropertySourcesPlaceholderConfigurer propertyPlaceholderConfigurer() {
 		PropertySourcesPlaceholderConfigurer placeHolder = new PropertySourcesPlaceholderConfigurer();

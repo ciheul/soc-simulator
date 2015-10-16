@@ -14,6 +14,16 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>4.1.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>4.1.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>4.1.5.RELEASE</version>
 		</dependency>
@@ -74,7 +84,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.ciheul.atsmd.main.AppNetty</mainClass>
+							<mainClass>com.ciheul.soc.simulator.main.App</mainClass>
 							<classpathPrefix>dependency-jars</classpathPrefix>
 						</manifest>
 					</archive>
