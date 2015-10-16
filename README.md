@@ -9,6 +9,9 @@
 ### Running application
 1. Pull from github
 
+  If you haven't clone this project, you may clone this project. 
+  > git clone https://github.com/ciheul/soc-simulator
+  
   To ensure you have the latest version, always pull from master.
   On your working directory:
   > git pull
